@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Processor;
+namespace App\Processor;
 
-use Exception\BinLookupException;
-use Exception\ExchangeRateException;
-use Exception\FileReadException;
-use Exception\JsonParseException;
-use Model\Transaction;
-use Service\BinLookup\BinLookupServiceInterface;
-use Service\CountryValidator\EuCountryValidatorInterface;
-use Service\ExchangeRate\ExchangeRateServiceInterface;
+use App\Exception\BinLookupException;
+use App\Exception\ExchangeRateException;
+use App\Exception\FileReadException;
+use App\Exception\JsonParseException;
+use App\Model\Transaction;
+use App\Service\BinLookup\BinLookupServiceInterface;
+use App\Service\CountryValidator\EuCountryValidatorInterface;
+use App\Service\ExchangeRate\ExchangeRateServiceInterface;
 
 class TransactionProcessor
 {

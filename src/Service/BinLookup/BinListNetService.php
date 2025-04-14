@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Service\BinLookup;
+namespace App\Service\BinLookup;
 
-use Exception\BinLookupException;
+use App\Exception\BinLookupException;
 
 class BinListNetService implements BinLookupServiceInterface
 {
@@ -41,7 +41,7 @@ class BinListNetService implements BinLookupServiceInterface
      * @return string
      * @throws BinLookupException
      */
-    private function makeApiRequest(string $bin): string
+    protected function makeApiRequest(string $bin): string
     {
         $url = self::API_URL . $bin;
         $response = @file_get_contents($url);

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Service\ExchangeRate;
+namespace App\Service\ExchangeRate;
 
-use Exception\ExchangeRateException;
+use App\Exception\ExchangeRateException;
 
 class ExchangeRatesApiService implements ExchangeRateServiceInterface
 {
@@ -37,7 +37,7 @@ class ExchangeRatesApiService implements ExchangeRateServiceInterface
      * @return string
      * @throws ExchangeRateException
      */
-    private function makeApiRequest(): string
+    protected function makeApiRequest(): string
     {
         $response = @file_get_contents(self::API_URL);
 

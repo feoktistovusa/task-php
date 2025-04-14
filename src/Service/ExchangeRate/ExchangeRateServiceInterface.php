@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Service\ExchangeRate;
+namespace App\Service\ExchangeRate;
 
-use Exception\ExchangeRateException;
+use App\Exception\ExchangeRateException;
 
 interface ExchangeRateServiceInterface
 {

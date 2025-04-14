@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Service\BinLookup;
+namespace App\Service\BinLookup;
 
-use Exception\BinLookupException;
+use App\Exception\BinLookupException;
 
 interface BinLookupServiceInterface
 {

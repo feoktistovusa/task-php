@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Processor\TransactionProcessor;
-use Service\BinLookup\BinListNetService;
-use Service\CountryValidator\EuCountryValidator;
-use Service\ExchangeRate\ExchangeRatesApiService;
+use App\Processor\TransactionProcessor;
+use App\Service\BinLookup\BinListNetService;
+use App\Service\CountryValidator\EuCountryValidator;
+use App\Service\ExchangeRate\ExchangeRatesApiService;
 
 // Check if the input file is provided
 if ($argc < 2) {

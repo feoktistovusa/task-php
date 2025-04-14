@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Tests;
+namespace App\Tests\Service;
 
 use App\Exception\BinLookupException;
 use App\Exception\ExchangeRateException;
@@ -12,7 +12,7 @@ use App\Service\CountryValidator\EuCountryValidatorInterface;
 use App\Service\ExchangeRate\ExchangeRateServiceInterface;
 use Mockery;
 use PHPUnit\Framework\TestCase;
-use Processor\TransactionProcessor;
+use App\Processor\TransactionProcessor;
 
 class TransactionProcessorTest extends TestCase
 {

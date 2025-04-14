@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Service\CountryValidator;
+namespace App\Service\CountryValidator;
 
 class EuCountryValidator implements EuCountryValidatorInterface
 {

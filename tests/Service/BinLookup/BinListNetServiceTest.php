@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Tests\Service\BinLookup;
+namespace App\Tests\Service\BinLookup;
 
-use Exception\BinLookupException;
+use App\Exception\BinLookupException;
 use App\Service\BinLookup\BinListNetService;
 use Mockery;
 use PHPUnit\Framework\TestCase;
